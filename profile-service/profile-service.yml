@@ -9,7 +9,7 @@ management:
 spring:
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     database-platform: org.hibernate.dialect.PostgreSQLDialect
@@ -19,7 +19,7 @@ spring:
         default_schema: microservices
         show_sql: true
         format_sql: true
-        ddl-auto: create-drop
+        ddl-auto: create
   datasource:
     url: jdbc:postgresql://localhost:5432/r4db
     username: postgres
